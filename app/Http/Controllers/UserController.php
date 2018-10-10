@@ -36,10 +36,10 @@ class UserController extends Controller
         return view('user.edit', compact('user'));
     }
 
-    public function update($user, $id)
+    public function update(Request $request, $id)
     {
-        $this->user->find($id)->update($user);
+        $this->user->find($id)->update($request->all());
 
-        return $this->redirect()->route('users.index'); 
+        return redirect()->route('users.index'); 
     }
 }

@@ -1,6 +1,6 @@
-<form action="{{ route('users.update', ['id' => $user->id]) }}">
+<form action="{{ route('users.update', ['id' => $user->id]) }}" method="POST">
 
-    @csrf()
+    @csrf
     @method('PUT')
 
     <label for="user-name">Nome:</label>
