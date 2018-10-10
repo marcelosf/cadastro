@@ -9,7 +9,7 @@ use Prettus\Validator\Contracts\ValidatorInterface;
 use Prettus\Validator\Exceptions\ValidatorException;
 use App\Http\Requests\UserCreateRequest;
 use App\Http\Requests\UserUpdateRequest;
-use App\Repositories\UserRepository;
+use App\Repositories\UserRepositoryEloquent;
 use App\Validators\UserValidator;
 
 /**
@@ -35,7 +35,7 @@ class UsersController extends Controller
      * @param UserRepository $repository
      * @param UserValidator $validator
      */
-    public function __construct(UserRepository $repository, UserValidator $validator)
+    public function __construct(UserRepositoryEloquent $repository, UserValidator $validator)
     {
         $this->repository = $repository;
         $this->validator  = $validator;
