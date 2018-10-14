@@ -14,8 +14,8 @@
                 <td>{{ $user->name }}</td>
                 <td>{{ $user->email }}</td>
                 <td>{{ $user->phone }}</td>
-                <td>{{ $user->birth_date }}</td>
-                <td>{{ $user->updated_at }}</td>
+                <td>{{ $user->birth_date->format('d/m/Y') }}</td>
+                <td>{{ $user->updated_at->format('d/m/Y') }}</td>
             </tr>
         @endforeach
     </tbody>
