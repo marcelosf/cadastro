@@ -21,6 +21,8 @@ class User extends Authenticatable implements Transformable
 
     protected $table = 'users';
 
+    protected $dates = ['birth_date'];
+
     /**
      * The attributes that are mass assignable.
      *
