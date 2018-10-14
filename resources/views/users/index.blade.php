@@ -3,6 +3,9 @@
         <tr>
             <th>Nome</th>
             <th>E-mail</th>
+            <th>Telefone</th>
+            <th>Data de nascimento</th>
+            <th>Última atualização</th>
         </tr>
     </thead>
     <tbody>
@@ -10,6 +13,9 @@
             <tr>
                 <td>{{ $user->name }}</td>
                 <td>{{ $user->email }}</td>
+                <td>{{ $user->phone }}</td>
+                <td>{{ $user->birth_date }}</td>
+                <td>{{ $user->updated_at }}</td>
             </tr>
         @endforeach
     </tbody>
