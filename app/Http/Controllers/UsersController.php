@@ -199,6 +199,6 @@ class UsersController extends Controller
             ]);
         }
 
-        return redirect()->back()->with('message', 'User deleted.');
+        return redirect()->route('users.index')->with('message', 'User deleted.');
     }
 }
