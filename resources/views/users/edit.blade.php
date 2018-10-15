@@ -10,6 +10,11 @@
     <input type="text" id="user-email" name="email" value="{{ $user->email }}">
 
     <p>
+        <label for="pictre">Foto:</label>
+        <input type="text" id="picture">
+    </p>
+
+    <p>
         <label for="membership_number">Número de sócio:</label>
         <input type="text" value="{{ $user->membership_number }}" id="membership_number">
     </p>
